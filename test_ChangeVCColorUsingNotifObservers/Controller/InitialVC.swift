@@ -18,7 +18,7 @@ class InitialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Choose Color"
+        title = "First VC"
         
         getSavedColor()
         createObservers()

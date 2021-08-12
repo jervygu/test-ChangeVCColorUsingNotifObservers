@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FifthVC: UIViewController {
+class ColorPickerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

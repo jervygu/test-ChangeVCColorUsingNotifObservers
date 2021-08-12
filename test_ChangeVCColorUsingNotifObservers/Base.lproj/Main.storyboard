@@ -30,32 +30,10 @@
             </objects>
             <point key="canvasLocation" x="265" y="94"/>
         </scene>
-        <!--FourthVC-->
-        <scene sceneID="rkN-Y3-43Q">
-            <objects>
-                <viewController storyboardIdentifier="fourth_VC" id="r6x-aP-EWQ" customClass="FourthVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y1O-eT-l5n">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8qk-oa-6vZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VpI-AB-BI2">
-                        <barButtonItem key="rightBarButtonItem" title="5th" id="XEv-5t-6d7">
-                            <connections>
-                                <segue destination="nlJ-GY-71u" kind="show" id="d2u-Fd-czc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T3k-jH-tsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2428" y="94"/>
-        </scene>
-        <!--FifthVC-->
+        <!--Color PickerVC-->
         <scene sceneID="Bec-Ll-Vuz">
             <objects>
-                <viewController storyboardIdentifier="fifth_VC" id="nlJ-GY-71u" customClass="FifthVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fifth_VC" id="nlJ-GY-71u" customClass="ColorPickerVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DBQ-wb-feF">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,29 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZe-pO-S0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3175" y="94"/>
-        </scene>
-        <!--ThirdVC-->
-        <scene sceneID="kZb-dX-MqD">
-            <objects>
-                <viewController storyboardIdentifier="third_VC" id="gHC-GN-OdO" customClass="ThirdVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ta6-mC-6vm">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="P5u-U6-aUK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mYG-xI-RGQ">
-                        <barButtonItem key="rightBarButtonItem" title="4th" id="RjD-yz-hEt">
-                            <connections>
-                                <segue destination="r6x-aP-EWQ" kind="show" id="Dcu-Mm-bfC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oTz-Cq-bJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1683.0769230769231" y="93.838862559241704"/>
+            <point key="canvasLocation" x="1649" y="94"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="IIt-CQ-Z0y">
@@ -213,9 +169,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="epP-cS-efb">
-                        <barButtonItem key="rightBarButtonItem" title="3rd" id="QdF-A3-CxV">
+                        <barButtonItem key="rightBarButtonItem" title="Color Picker" id="QdF-A3-CxV">
                             <connections>
-                                <segue destination="gHC-GN-OdO" kind="show" id="RZu-3U-B4h"/>
+                                <segue destination="nlJ-GY-71u" kind="show" id="1h8-8e-57U"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
