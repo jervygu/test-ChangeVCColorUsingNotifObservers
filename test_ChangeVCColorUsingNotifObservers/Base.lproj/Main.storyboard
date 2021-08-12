@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wTs-gR-0b3">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InitialVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitialVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="evE-qs-uWF">
+                        <barButtonItem key="rightBarButtonItem" title="2nd" id="BSy-wO-xXP">
+                            <connections>
+                                <segue destination="HSz-OJ-rqH" kind="show" id="gml-zc-NWN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="94"/>
+        </scene>
+        <!--FourthVC-->
+        <scene sceneID="rkN-Y3-43Q">
+            <objects>
+                <viewController storyboardIdentifier="fourth_VC" id="r6x-aP-EWQ" customClass="FourthVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1O-eT-l5n">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8qk-oa-6vZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VpI-AB-BI2">
+                        <barButtonItem key="rightBarButtonItem" title="5th" id="XEv-5t-6d7">
+                            <connections>
+                                <segue destination="nlJ-GY-71u" kind="show" id="d2u-Fd-czc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3k-jH-tsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428" y="94"/>
+        </scene>
+        <!--FifthVC-->
+        <scene sceneID="Bec-Ll-Vuz">
+            <objects>
+                <viewController storyboardIdentifier="fifth_VC" id="nlJ-GY-71u" customClass="FifthVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DBQ-wb-feF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djG-xt-JdQ">
+                                <rect key="frame" x="70" y="268" width="250" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OgX-zY-8rM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WHY-ow-1b0"/>
+                                    <action selector="colorButtonPressed:" destination="nlJ-GY-71u" eventType="touchUpInside" id="CAX-ra-AfG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brA-Yy-qsH">
+                                <rect key="frame" x="70" y="332" width="250" height="44"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ebl-fm-ptX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Purple">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deS-i9-nqL"/>
+                                    <action selector="colorButtonPressed:" destination="nlJ-GY-71u" eventType="touchUpInside" id="daY-1Z-Cog"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqo-4D-o8A">
+                                <rect key="frame" x="70" y="396" width="250" height="44"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Eg-zH-I2V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Pink">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajU-W5-OB8"/>
+                                    <action selector="colorButtonPressed:" destination="nlJ-GY-71u" eventType="touchUpInside" id="xvc-BW-7uf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-qU-2mj">
+                                <rect key="frame" x="70" y="460" width="250" height="44"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZLg-Jh-5jt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Teal">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61m-fQ-802"/>
+                                    <action selector="colorButtonPressed:" destination="nlJ-GY-71u" eventType="touchUpInside" id="44b-tV-Qjp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGB-IJ-oU6">
+                                <rect key="frame" x="70" y="524" width="250" height="44"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Y0Z-1p-kzv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Yellow">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJJ-U9-KxS"/>
+                                    <action selector="colorButtonPressed:" destination="nlJ-GY-71u" eventType="touchUpInside" id="5Jm-L7-qBl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjY-DL-vSN">
+                                <rect key="frame" x="70" y="588" width="250" height="44"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ufl-tC-bky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Dark Gray">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FWe-Vv-n5X"/>
+                                    <action selector="colorButtonPressed:" destination="nlJ-GY-71u" eventType="touchUpInside" id="rpP-Zs-5OH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4QL-i4-IvP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lGB-IJ-oU6" firstAttribute="top" secondItem="b8t-qU-2mj" secondAttribute="bottom" constant="20" id="7oN-ng-8E3"/>
+                            <constraint firstItem="brA-Yy-qsH" firstAttribute="leading" secondItem="4QL-i4-IvP" secondAttribute="leading" constant="70" id="8Uf-6l-dXU"/>
+                            <constraint firstItem="djG-xt-JdQ" firstAttribute="top" secondItem="4QL-i4-IvP" secondAttribute="top" constant="180" id="9ax-qf-VSe"/>
+                            <constraint firstItem="brA-Yy-qsH" firstAttribute="top" secondItem="djG-xt-JdQ" secondAttribute="bottom" constant="20" id="B32-E7-ZMe"/>
+                            <constraint firstItem="4QL-i4-IvP" firstAttribute="trailing" secondItem="lGB-IJ-oU6" secondAttribute="trailing" constant="70" id="cPa-J0-qJ5"/>
+                            <constraint firstItem="4QL-i4-IvP" firstAttribute="trailing" secondItem="brA-Yy-qsH" secondAttribute="trailing" constant="70" id="enS-Sh-xRf"/>
+                            <constraint firstItem="bqo-4D-o8A" firstAttribute="leading" secondItem="4QL-i4-IvP" secondAttribute="leading" constant="70" id="eu5-y3-SEJ"/>
+                            <constraint firstItem="4QL-i4-IvP" firstAttribute="trailing" secondItem="bqo-4D-o8A" secondAttribute="trailing" constant="70" id="iYi-FG-OYj"/>
+                            <constraint firstItem="OjY-DL-vSN" firstAttribute="leading" secondItem="4QL-i4-IvP" secondAttribute="leading" constant="70" id="j5a-dl-0wa"/>
+                            <constraint firstItem="djG-xt-JdQ" firstAttribute="leading" secondItem="4QL-i4-IvP" secondAttribute="leading" constant="70" id="jAv-ok-6Lk"/>
+                            <constraint firstItem="lGB-IJ-oU6" firstAttribute="leading" secondItem="4QL-i4-IvP" secondAttribute="leading" constant="70" id="k3h-gd-4w8"/>
+                            <constraint firstItem="b8t-qU-2mj" firstAttribute="leading" secondItem="4QL-i4-IvP" secondAttribute="leading" constant="70" id="lGB-dA-znd"/>
+                            <constraint firstItem="4QL-i4-IvP" firstAttribute="trailing" secondItem="OjY-DL-vSN" secondAttribute="trailing" constant="70" id="mTn-we-a9A"/>
+                            <constraint firstItem="4QL-i4-IvP" firstAttribute="trailing" secondItem="djG-xt-JdQ" secondAttribute="trailing" constant="70" id="mtM-yh-F4L"/>
+                            <constraint firstItem="bqo-4D-o8A" firstAttribute="top" secondItem="brA-Yy-qsH" secondAttribute="bottom" constant="20" id="rmz-P8-UP4"/>
+                            <constraint firstItem="OjY-DL-vSN" firstAttribute="top" secondItem="lGB-IJ-oU6" secondAttribute="bottom" constant="20" id="sRR-ih-Co9"/>
+                            <constraint firstItem="b8t-qU-2mj" firstAttribute="top" secondItem="bqo-4D-o8A" secondAttribute="bottom" constant="20" id="xlj-pN-sHb"/>
+                            <constraint firstItem="4QL-i4-IvP" firstAttribute="trailing" secondItem="b8t-qU-2mj" secondAttribute="trailing" constant="70" id="yc8-j2-Jba"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MV5-dm-Qgt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZe-pO-S0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3175" y="94"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="kZb-dX-MqD">
+            <objects>
+                <viewController storyboardIdentifier="third_VC" id="gHC-GN-OdO" customClass="ThirdVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ta6-mC-6vm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P5u-U6-aUK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mYG-xI-RGQ">
+                        <barButtonItem key="rightBarButtonItem" title="4th" id="RjD-yz-hEt">
+                            <connections>
+                                <segue destination="r6x-aP-EWQ" kind="show" id="Dcu-Mm-bfC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTz-Cq-bJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683.0769230769231" y="93.838862559241704"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="IIt-CQ-Z0y">
+            <objects>
+                <viewController storyboardIdentifier="second_VC" id="HSz-OJ-rqH" customClass="SecondVC" customModule="test_ChangeVCColorUsingNotifObservers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncE-qA-olY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AlR-1F-Z3y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="epP-cS-efb">
+                        <barButtonItem key="rightBarButtonItem" title="3rd" id="QdF-A3-CxV">
+                            <connections>
+                                <segue destination="gHC-GN-OdO" kind="show" id="RZu-3U-B4h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ih3-MS-UeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.23076923076917" y="93.838862559241704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4wQ-tG-zYZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wTs-gR-0b3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OWc-Jw-ohi">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="barTintColor" systemColor="secondarySystemBackgroundColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7se-Sw-Gp1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ3-Js-Q6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
